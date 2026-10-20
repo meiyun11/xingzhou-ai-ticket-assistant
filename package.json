@@ -1,0 +1,25 @@
+{
+  "name": "knowledge-ticket-assistant",
+  "version": "0.5.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server/index.js",
+    "test": "node --test tests/*.test.js",
+    "dev:web": "vite --config web/vite.config.ts",
+    "build:web": "vue-tsc --noEmit -p web/tsconfig.json && vite build --config web/vite.config.ts"
+  },
+  "engines": {
+    "node": ">=26"
+  },
+  "dependencies": {
+    "express": "4.21.2",
+    "vue": "3.5.44"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "6.0.10",
+    "typescript": "5.9.3",
+    "vite": "8.3.4",
+    "vue-tsc": "3.3.13"
+  }
+}
